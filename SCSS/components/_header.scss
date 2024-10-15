@@ -1,0 +1,59 @@
+header {
+    padding: 1%;
+    background-color: #191D88;
+    color: white;
+    font-family: "JejuHallasan";
+    font-weight: 400;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+
+    .main-logo {
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .title-container {
+        flex-grow: 1; 
+        text-align: center;
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+    @media (max-width: 320px) {
+        padding: 10px; 
+        width: 100%;
+
+        .main-logo {
+            width: 60px; 
+            margin-right: 10px; 
+        }
+
+        .title-container {
+            font-size: 14px; 
+        }
+
+        .nav-container {
+            flex-direction: column; 
+            align-items: center; 
+            margin-left: 0; 
+        }
+
+        nav {
+            ul {
+                flex-direction: column; 
+                align-items: center; 
+
+                li {
+                    margin: 5px 0; 
+                }
+            }
+        }
+    }
+}

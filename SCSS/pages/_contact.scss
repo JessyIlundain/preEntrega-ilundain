@@ -1,0 +1,84 @@
+.container {
+    width: 700px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 320px) {
+      width: 90%; 
+      padding: 15px; 
+      margin: 10px auto; 
+  }
+  }
+  
+  .container h2 {
+    color: #337CCF;
+    
+    @media (max-width: 320px) {
+      font-size: 1.5em; 
+  }
+  }
+  
+  form {
+    padding: 10px 0;
+
+    @media (max-width: 320px) {
+      padding: 5px 0; 
+  }
+  }
+  
+  div {
+    margin-bottom: 15px;
+
+    @media (max-width: 320px) {
+      margin-bottom: 10px; 
+  }
+  }
+  
+  label {
+    color: #337CCF;
+    font-weight: bold;
+
+    @media (max-width: 320px) {
+      font-size: 0.9em; 
+  }
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 2px solid #337CCF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Jaldi', sans-serif;
+    color: #337CCF;
+
+    @media (max-width: 320px) {
+      padding: 8px; 
+  }
+  }
+  
+  input[type="submit"] {
+    background-color: #337CCF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+    @media (max-width: 320px) {
+      padding: 10px 15px; 
+      font-size: 14px; 
+  }
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #286C99;
+  }
+  

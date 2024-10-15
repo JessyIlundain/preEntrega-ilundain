@@ -1,0 +1,41 @@
+.courses-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+
+    @media (max-width: 320px) {
+      padding: 15px; 
+  }
+  }
+  
+  .course-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    @media (max-width: 320px) {
+      padding: 15px; 
+      margin-bottom: 15px; 
+  }
+  }
+  
+  .course-title {
+    color: #191D88;
+    font-size: 1.5em;
+
+    @media (max-width: 320px) {
+      font-size: 1.2em; 
+  }
+  }
+  
+  .course-description {
+    font-family: 'Jaldi', sans-serif;
+    color: #337CCF;
+    margin-top: 10px;
+
+    @media (max-width: 320px) {
+      font-size: 0.9em; 
+      margin-top: 5px; 
+  }
+  }
+  
