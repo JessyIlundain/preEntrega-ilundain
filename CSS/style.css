@@ -24,7 +24,7 @@ header .nav-container {
   flex-direction: row;
   width: 100%;
 }
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   header {
     padding: 10px;
     width: 100%;
@@ -175,7 +175,7 @@ main article .split-content .image-container img {
   width: 100%;
   height: auto;
 }
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   main article {
     flex-direction: column;
     padding: 10px;
@@ -206,7 +206,7 @@ main .subtitle {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
-@media (max-width: 320px) {
+@media (max-width: 720px) {
   main {
     padding: 16px;
     gap: 15px;
@@ -222,7 +222,6 @@ main .subtitle {
 
 .title-container {
   text-align: center;
-  margin-left: 200px;
 }
 .title-container h1 {
   font-size: 3em;
