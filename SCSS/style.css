@@ -1,0 +1,572 @@
+header {
+  padding: 1%;
+  background-color: #191D88;
+  color: white;
+  font-family: "JejuHallasan";
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .main-logo {
+  width: 80px;
+  margin-right: 20px;
+}
+header .title-container {
+  flex-grow: 1;
+  text-align: center;
+}
+header .nav-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+    width: 100%;
+  }
+  header .main-logo {
+    width: 70px;
+    margin-right: 15px;
+  }
+  header .title-container {
+    font-size: 16px;
+  }
+  header .nav-container {
+    margin-left: 10px;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    padding: 10px;
+    width: 100%;
+  }
+  header .main-logo {
+    width: 60px;
+    margin-right: 10px;
+  }
+  header .title-container {
+    font-size: 14px;
+  }
+  header .nav-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 5px 0;
+  }
+}
+
+footer {
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(25, 29, 136, 0.9019607843);
+  color: white;
+}
+footer .line {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .footer-content .social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer .footer-content .social-media img {
+  margin-right: 10px;
+  width: 30px;
+}
+footer .footer-content span {
+  font-size: 10px;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  footer .footer-content {
+    padding: 15px 5px;
+  }
+  footer .footer-content .footer-content span {
+    font-size: 9px;
+  }
+  footer .footer-content .footer-content .social-media img {
+    width: 28px;
+    margin-right: 8px;
+  }
+  footer .footer-content .line {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 320px) {
+  footer .footer-content {
+    padding: 15px 5px;
+  }
+  footer .footer-content .footer-content span {
+    font-size: 8px;
+  }
+  footer .footer-content .footer-content .social-media img {
+    width: 25px;
+    margin-right: 5px;
+  }
+  footer .footer-content .line {
+    margin: 10px 0;
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  font-family: "Jaldi", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #286C99;
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #286C99;
+    overflow: hidden;
+  }
+  .navbar a {
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  nav li {
+    margin: 5px 0;
+  }
+}
+@font-face {
+  font-family: "JejuHallasan";
+  src: url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.eot");
+  src: url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.woff") format("woff"), url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/2da952d097bffd198ec0f0aa3fdd6804.svg#JejuHallasan") format("svg");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Jaldi", sans-serif;
+  color: #337CCF;
+}
+
+main article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+main article .split-content .text-container {
+  order: 1;
+  flex: 1;
+}
+main article .split-content .image-container {
+  order: 2;
+  flex: 1;
+}
+main article .split-content .image-container img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 320px) {
+  main article {
+    flex-direction: column;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+  }
+  main article .split-content .text-container {
+    order: 1;
+    text-align: center;
+  }
+  main article .split-content .image-container {
+    order: 2;
+  }
+  main article .split-content .image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+main {
+  padding: 32px;
+  display: grid;
+  grid-template-rows: repeat(auto-fit);
+  gap: 20px;
+  text-align: center;
+}
+main .subtitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  main {
+    padding: 16px;
+    gap: 15px;
+  }
+  main .subtitle {
+    font-size: 1em;
+  }
+  main img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title-container {
+  text-align: center;
+  margin-left: 200px;
+}
+.title-container h1 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+.title-container h3 {
+  font-size: 2em;
+  margin: 5px 0;
+}
+.title-container h4 {
+  font-size: 1.5em;
+  margin: 5px 0;
+  font-style: italic;
+}
+.title-container h1, .title-container h3, .title-container h4 {
+  margin: 0;
+}
+@media (max-width: 320px) {
+  .title-container {
+    margin-left: 0px;
+  }
+  .title-container h1 {
+    font-size: 2em;
+  }
+  .title-container h3 {
+    font-size: 1.5em;
+  }
+  .title-container h4 {
+    font-size: 1.2em;
+  }
+}
+
+.join-us.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+@media (max-width: 320px) {
+  .join-us.subtitle {
+    margin: 10px;
+  }
+}
+
+.join-us.subtitle p {
+  margin-bottom: 10px;
+}
+@media (max-width: 320px) {
+  .join-us.subtitle p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+}
+
+.container {
+  width: 700px;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+}
+
+.container h2 {
+  color: #337CCF;
+}
+@media (max-width: 320px) {
+  .container h2 {
+    font-size: 1.5em;
+  }
+}
+
+form {
+  padding: 10px 0;
+}
+@media (max-width: 320px) {
+  form {
+    padding: 5px 0;
+  }
+}
+
+div {
+  margin-bottom: 15px;
+}
+@media (max-width: 320px) {
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+label {
+  color: #337CCF;
+  font-weight: bold;
+}
+@media (max-width: 320px) {
+  label {
+    font-size: 0.9em;
+  }
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 2px solid #337CCF;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: "Jaldi", sans-serif;
+  color: #337CCF;
+}
+@media (max-width: 320px) {
+  input[type=text],
+  input[type=email],
+  textarea {
+    padding: 8px;
+  }
+}
+
+input[type=submit] {
+  background-color: #337CCF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (max-width: 320px) {
+  input[type=submit] {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+input[type=submit]:hover {
+  background-color: #286C99;
+}
+
+.courses-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+@media (max-width: 320px) {
+  .courses-container {
+    padding: 15px;
+  }
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+  .course-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.course-title {
+  color: #191D88;
+  font-size: 1.5em;
+}
+@media (max-width: 320px) {
+  .course-title {
+    font-size: 1.2em;
+  }
+}
+
+.course-description {
+  font-family: "Jaldi", sans-serif;
+  color: #337CCF;
+  margin-top: 10px;
+}
+@media (max-width: 320px) {
+  .course-description {
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+@media (max-width: 320px) {
+  .gallery-container {
+    padding: 15px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 320px) {
+  .gallery-item {
+    padding: 8px;
+  }
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+@media (max-width: 320px) {
+  .gallery-item img {
+    width: 100%;
+    max-height: 200px;
+  }
+}
+
+.about-us-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Jaldi", sans-serif;
+  color: #337CCF;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 320px) {
+  .about-us-container {
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+
+.about-title {
+  color: #191D88;
+  margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+  .about-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+}
+
+.about-content {
+  font-family: "Jaldi", sans-serif;
+  color: #337CCF;
+  text-align: justify;
+  margin: 20px 0;
+  max-width: 100%;
+}
+@media (max-width: 320px) {
+  .about-content {
+    font-size: 0.9em;
+    margin: 10px 0;
+  }
+}
+
+.image-container img {
+  width: 50%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+@media (max-width: 320px) {
+  .image-container img {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

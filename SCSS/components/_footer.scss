@@ -37,24 +37,45 @@ footer {
             color: #dddddd;
             margin-bottom: 10px; 
         }
-    }
-    @media (max-width: 320px) {
-        padding: 15px 5px; 
+    
+    @media (max-width: 480px) {
+        padding: 15px 5px;
+
         .footer-content {
             span {
-                font-size: 8px; 
+                font-size: 9px;
             }
 
             .social-media img {
-                width: 25px; 
-                margin-right: 5px; 
+                width: 28px;
+                margin-right: 8px;
             }
         }
 
         .line {
-            margin: 10px 0; 
+            margin: 15px 0;
         }
     }
+
+    @media (max-width: 320px) {
+        padding: 15px 5px;
+
+        .footer-content {
+            span {
+                font-size: 8px;
+            }
+
+            .social-media img {
+                width: 25px;
+                margin-right: 5px;
+            }
+        }
+
+        .line {
+            margin: 10px 0;
+        }
+    }
+  }
 }
 
 
